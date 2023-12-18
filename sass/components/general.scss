@@ -33,7 +33,7 @@ input {
     display: none;
 }
 
-label span {
+.input-wrap label {
     margin-top: f.rem(10px);
     background-color: var(--color-dark-blue);
     border-radius: 50%;
@@ -54,7 +54,7 @@ label span {
     }
 }
 
-input:checked + span {
+input:checked + label {
     color: var(--color-white);
     background-color: var(--color-orange);
 }

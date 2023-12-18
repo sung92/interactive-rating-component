@@ -1,11 +1,11 @@
 const form = document.querySelector('.form');
 const thankyou = document.querySelector('.thankyou-state');
 const thankyouText = document.querySelector('.thankyou-text');
-const labels = document.querySelectorAll('label');
+const inputs = document.querySelectorAll('.input-wrap');
 let ratingValue;
 
-labels.forEach( label => {
-    label.addEventListener('change', function() {
+inputs.forEach( input => {
+    input.addEventListener('change', function() {
         ratingValue = this.dataset.value;
     })
 })
