@@ -1,0 +1,111 @@
+@use "../abstracts/functions.scss" as f;
+@use "../abstracts/colors.scss";
+
+/* RATING STATE*/
+/***************/
+
+
+.icon-star {
+    background-color: hsla(216, 12%, 54%, 0.274);
+    border-radius: 50%;
+    padding: 15px 15px;
+}
+
+.primary-heading {
+    margin-top: f.rem(16px);
+    font-size: f.rem(24px);
+    color: var(--color-white);
+}
+
+.form-text {
+    margin-top: f.rem(8px);
+    color: var(--color-light-grey);
+}
+
+/*Rating Inputs*/
+.ratings {
+    margin-top: f.rem(16px);
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    display: none;
+}
+
+label span {
+    margin-top: f.rem(10px);
+    background-color: var(--color-dark-blue);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-medium-grey);
+
+    transition: all 0.3s;
+
+    &:hover {
+        color: var(--color-white);
+        background-color: var(--color-orange);
+    }
+}
+
+input:checked + span {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+
+/*Button*/
+button {
+    margin-top: f.rem(24px);
+    width: 100%;
+    background-color: var(--color-orange);
+    padding: f.rem(12px) 0;
+    border-radius: f.rem(48px);
+    border: transparent;
+    letter-spacing: f.rem(2px);
+    text-transform: uppercase;
+    color: var(--color-white);
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    &:hover {
+        color: var(--color-orange);
+        background-color: var(--color-white);
+    }
+}
+
+
+/* THANK YOU STATE*/
+/******************/
+.thankyou-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.thankyou-img {
+    height: 50%;
+    width: 50%;
+}
+
+.thankyou-text {
+    margin-top: f.rem(20px);
+    background-color: hsla(216, 12%, 54%, 0.144);
+    padding: f.rem(5px) f.rem(10px);
+    border-radius: f.rem(48px);
+    color: var(--color-orange);
+}
+
+.hidden {
+    display: none;
+}
+
