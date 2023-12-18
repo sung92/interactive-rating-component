@@ -1,13 +1,10 @@
 const form = document.querySelector('.form');
 const thankyou = document.querySelector('.thankyou-state');
 const thankyouText = document.querySelector('.thankyou-text');
-const inputs = document.querySelectorAll('input');
 let ratingValue;
 
-inputs.forEach( input => {
-    input.addEventListener('change', function() {
-        ratingValue = this.value;
-    })
+form.addEventListener('change', function() {
+    ratingValue = this.selector.value;
 })
 
 form.addEventListener('submit', function(e) {

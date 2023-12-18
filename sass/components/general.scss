@@ -23,8 +23,9 @@
 }
 
 /*Rating Inputs*/
-.ratings {
+fieldset {
     margin-top: f.rem(16px);
+    border: transparent;
     display: flex;
     justify-content: space-between;
 }
@@ -55,8 +56,8 @@ input {
 }
 
 input:checked + label {
-    color: var(--color-white);
-    background-color: var(--color-orange);
+    color: var(--color-white) !important;
+    background-color: var(--color-orange) !important;
 }
 
 
